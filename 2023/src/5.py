@@ -10,4 +10,4 @@ def b():
 def main():
     solution_a = a()
     solution_b = b()
-    print(f"Day 3: a {solution_a}, b {solution_b}")
+    print(f"Day 5: a {solution_a}, b {solution_b}")

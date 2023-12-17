@@ -1,5 +1,5 @@
 import sys
-from utils import input
+from src.utils import input
 
 
 def a(file_name: str):
