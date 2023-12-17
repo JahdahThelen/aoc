@@ -17,9 +17,3 @@ def a(file_name: str):
             total += 2 ** (len(matching_numbers) - 1)
 
     return total
-
-def b():
-    return "unknown"
-
-def main():
-    return (a("4a.txt"), b())

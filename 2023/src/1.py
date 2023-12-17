@@ -13,8 +13,3 @@ def a(file_name: str):
 
     return total
 
-def b():
-    return "unknown"
-
-def main():
-    return (a("1a.txt"), b())

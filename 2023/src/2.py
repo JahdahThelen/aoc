@@ -22,15 +22,9 @@ def a(file_name: str):
 
     return sum(possible_games)
 
-def b():
-    return "unknown"
-
 def max_of_color(line: str, color: str) -> int:
     pattern = r"\d* " + color
 
     result = re.compile(pattern).findall(line)
     max_cubes = max([int(x.split()[0]) for x in result])
     return max_cubes
-
-def main():
-    return (a("2a.txt"), b())
