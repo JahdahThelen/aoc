@@ -1,0 +1,28 @@
+[[package]]
+name = "natsort"
+version = "8.4.0"
+description = "Simple yet flexible natural sorting in Python."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+fast = ["fastnumbers (>=2.0.0)"]
+icu = ["PyICU (>=1.0.0)"]
+
+[[package]]
+name = "numpy"
+version = "1.26.2"
+description = "Fundamental package for array computing in Python"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "f2a40292c1117ba312ce7b3c11490ae81c4038910ffd7a8871e4e540a4f7f10a"
+
+[metadata.files]
+natsort = []
+numpy = []

@@ -2,7 +2,7 @@ import sys
 from utils import input
 
 
-def main(file_name: str):
+def a(file_name: str):
     total = 0
 
     for line in input(file_name):
@@ -11,12 +11,12 @@ def main(file_name: str):
         if len(line_numbers) > 0:
             total += int(line_numbers[0] + line_numbers[-1])
 
-    print(total)
+    return total
 
+def b():
+    return "unknown"
 
-if __name__ == "__main__":
-    args = sys.argv[1:]
-    if len(args) == 0:
-        main("1a.txt")
-    elif args[0] == "test":
-        main("1a.test.txt")
+def main():
+    solution_a = a("1a.txt")
+    solution_b = b()
+    print(f"Day 1: a {solution_a}, b {solution_b}")

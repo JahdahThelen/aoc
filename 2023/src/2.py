@@ -3,7 +3,7 @@ import re
 from utils import input
 
 
-def main(file_name: str):
+def a(file_name: str):
     possible_games = []
     impossible_games = []
     game = 1
@@ -20,10 +20,10 @@ def main(file_name: str):
 
         game += 1
 
-    print(f"Possible: {possible_games}")
-    print(f"Impossible: {impossible_games}")
-    print(f"Sum of possible: {sum(possible_games)}")
+    return sum(possible_games)
 
+def b():
+    return "unknown"
 
 def max_of_color(line: str, color: str) -> int:
     pattern = r"\d* " + color
@@ -32,11 +32,7 @@ def max_of_color(line: str, color: str) -> int:
     max_cubes = max([int(x.split()[0]) for x in result])
     return max_cubes
 
-
-if __name__ == "__main__":
-    args = sys.argv[1:]
-    if len(args) == 0:
-        main("2a.txt")
-    elif args[0] == "test":
-        main("2a.test.txt")
-
+def main():
+    solution_a = a("2a.txt")
+    solution_b = b()
+    print(f"Day 2: a {solution_a}, b {solution_b}")
