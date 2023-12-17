@@ -17,6 +17,4 @@ def b():
     return "unknown"
 
 def main():
-    solution_a = a("1a.txt")
-    solution_b = b()
-    print(f"Day 1: a {solution_a}, b {solution_b}")
+    return (a("1a.txt"), b())

@@ -11,7 +11,8 @@ def main():
         if names and entry.name not in names:
             continue
         day = entry.load()
-        day()
+        (a, b) = day()
+        print(f"Day {entry.name}: a {a}, b {b}")
         print()
 
 if __name__ == "__main__":

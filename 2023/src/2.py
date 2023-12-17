@@ -33,6 +33,4 @@ def max_of_color(line: str, color: str) -> int:
     return max_cubes
 
 def main():
-    solution_a = a("2a.txt")
-    solution_b = b()
-    print(f"Day 2: a {solution_a}, b {solution_b}")
+    return (a("2a.txt"), b())
